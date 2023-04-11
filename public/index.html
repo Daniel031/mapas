@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="contenedor principal sombra">
+		<div class="contenedor menu"> 
+			<select name="menu" id="menu-select">
+				<option value="0" >Marcador</option>
+				<option value="1">Circulo</option>
+				<option value="2">Poligono</option>
+			</select>
+			<div class="elementos fila" id="marcador">
+				<select class="form-select" name="iconos" id="iconos">
+				</select>
+				<input id="etiqueta" placeholder="etiqueta" type="text">
+				<img id="icono-seleccionado" src="./css/img/default.png" width="25px">
+			</div>
+			<div class="elementos fila" id="circulo">
+				<input id="radio-circulo" placeholder="Radio en metros" type="number" value="1" min="1">
+				<select name="menu" id="menu-select-color">
+					<option value="0" >Rojo</option>
+					<option value="1">Amarillo</option>
+					<option value="2">Azul</option>
+				</select>
+			</div>
+			<div class="elementos fila" id="poligono">
+				<select name="menu" id="select-color-poli">
+					<option value="0" >Rojo</option>
+					<option value="1">Amarillo</option>
+					<option value="2">Azul</option>
+				</select>
+				<input type="button" name="nuevoPoligono" id="poligonoAdd" value="+ AREA">
+			</div>
+		</div>  
+
+		<div class="contenedor">
+			<div class="mapa" id="map">
+	
+			</div> 
+		</div>		 
+
+    </div>
+ 
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="leaflet/leaflet.js"></script>
+   <script src="js/script.js"></script>
+    <script>
+/*var latlngs = [[37, -109.05],[41, -109.03],[41, -102.05],[37, -102.04]];
+
+var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+
+// zoom the map to the polygon
+map.fitBounds(polygon.getBounds());*/
+    
+    </script>  
+</body>
+</html>

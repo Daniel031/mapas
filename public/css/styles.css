@@ -1,0 +1,65 @@
+body {
+	padding: 30px 30px 30px 30px;
+
+}
+
+.contenedor{
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	margin-right:5px;
+
+}
+.sombra{
+	box-shadow: 5px 5px 10px grey;
+}
+
+.principal{
+	display:flex;
+	
+}
+.elementos{
+	display:flex;
+	flex-direction:column;
+
+}
+.fila {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.mapa{
+	width: 600px;
+	height: 400px;
+}
+
+
+
+.menu{
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	margin-bottom: 10px;
+}
+
+#menu-select{
+	margin-bottom: 10px;
+}
+
+#poligono , #circulo{
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
